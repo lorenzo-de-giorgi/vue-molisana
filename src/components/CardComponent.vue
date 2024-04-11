@@ -4,7 +4,7 @@
         <div class="card-body">
             <h5 class="card-title">{{title}}</h5>
             <p class="card-text">{{ text }}</p>
-            <a href="#" class="btn btn-primary" v-if="link">{{ link }}</a>
+            <a href="#" class="btn btn-danger" @click="$emit('elimina')">Remove</a>
         </div>
     </div>
 </template>
@@ -16,4 +16,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+    h5{
+        font-size: 18px;
+    }
+</style>
