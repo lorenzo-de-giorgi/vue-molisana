@@ -12,7 +12,12 @@
 <script>
 export default {
     name: 'CardComponent',
-    props: ['image', 'title', 'text','link']
+    props: ['image', 'title', 'text','link'],
+    data() {
+        return {
+            
+        }
+    },
 }
 </script>
 
